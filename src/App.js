@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import React, {Component} from 'react';
+import {View, StyleSheet} from 'react-native';
+import AppContainer from './router';
 
-export default class HelloWorldApp extends Component {
-  render() {
-    return (
-        <View>
-          <Text>Hello world!</Text>
-        </View>
-    );
-  }
+export default class App extends Component {
+    render() {
+        return <AppContainer/>
+    }
 }
