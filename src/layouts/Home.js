@@ -4,8 +4,8 @@ import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
 export default class Home extends Component {
     static contentList = [
-        {content: '测试 View 和 Text 组件', page: 'ViewAndTextTest' },
-        {content: '测试'},
+        { content: '测试 View 组件', page: 'ViewTest' },
+        { content: '测试 Text 组件', page: 'TextTest' },
     ]
 
     constructor(props) {
@@ -17,15 +17,15 @@ export default class Home extends Component {
             style={styles.itemContent}
             key={index}
             onPress={__ => this.props.navigation.navigate(item.page)}
-        >{`${index + 1}: ${item.content}` }</Text>
+        >{`${index + 1}: ${item.content}`}</Text>
     })
 
     render() {
         return (
             <ScrollView
-            style={styles.home}
-            contentContainerStyle={styles.contentContainer
-            }>{this._renderContentList()}</ScrollView>
+                style={styles.home}
+                contentContainerStyle={styles.contentContainer
+                }>{this._renderContentList()}</ScrollView>
         );
     }
 }
