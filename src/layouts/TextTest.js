@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textDecorationLine: 'underline',
     // textDecorationColor: 'green' // ios only
+    // 可见 Text 组件就好像一个可以容纳文字的View，默认宽度也是充满父容器
+    backgroundColor: 'lightcoral'
   },
   secondText: {
     marginVertical: 20,
