@@ -4,6 +4,7 @@ import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
 export default class Home extends Component {
     static contentList = [
+        { content: '简单测试', page: 'SimpleTest' },
         { content: '测试 View 组件', page: 'ViewTest' },
         { content: '测试 Text 组件', page: 'TextTest' },
     ]

@@ -24,13 +24,16 @@ export default class ViewTest extends Component {
             >startlalalalalalalalalallalalalalalalalaaalalaend</Text>
             <View style={styles.flexLeftBottom}></View>
           </View>
-          
+
           <View style={styles.flexRight}>
-            <View styles={styles.flexRightTop}><Text>右上</Text></View>
-            <View styles={styles.flexRightMiddle}><Text>右中</Text></View>
-            <View styles={styles.flexRightBottom}><Text>右下</Text></View>
+            <View style={styles.flexRightTop}><Text>右上</Text></View>
+            <View style={styles.flexRightMiddle}><Text>右中</Text></View>
+            <View style={styles.flexRightBottom}><Text>右下</Text></View>
+            <View style={styles.hiddenView}><Text>隐藏</Text></View>
           </View>
         </View>
+
+
       </View>
     )
   }
@@ -54,7 +57,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightcoral'
   },
   testFlexContainer: {
-    // react native 里的 View 默认具有 flex 特性，并且 flexDirection 默认是 column
+    // react native 里的 View 默认 display: flex，并且 flexDirection 默认是 column
     width: '80%',
     height: 250,
     flexDirection: 'row',
@@ -78,11 +81,14 @@ const styles = StyleSheet.create({
   flexRight: {
     flex: 1,
     height: '100%',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
     backgroundColor: 'aquamarine'
   },
   flexRightTop: {
     width: 50,
     height: 50,
+    alignSelf: 'flex-start',
     backgroundColor: 'lightskyblue'
   },
   flexRightMiddle: {
@@ -93,6 +99,11 @@ const styles = StyleSheet.create({
   flexRightBottom: {
     width: 50,
     height: 50,
+    alignSelf: 'flex-end',
     backgroundColor: 'darkcyan'
+  },
+  hiddenView: {
+    display: 'none',
+    backgroundColor: 'red',
   }
 })

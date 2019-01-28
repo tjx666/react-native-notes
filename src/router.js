@@ -1,5 +1,6 @@
 import { createAppContainer, createStackNavigator } from "react-navigation";
 import Home from './layouts/Home';
+import SimpleTest from './layouts/SimpleTest';
 import ViewTest from './layouts/ViewTest';
 import TextTest from './layouts/TextTest';
 
@@ -9,6 +10,9 @@ const AppNavigator = createStackNavigator({
         navigationOptions: () => ({
             header: null
         }),
+    },
+    SimpleTest: {
+        screen: SimpleTest
     },
     ViewTest: {
         screen: ViewTest
