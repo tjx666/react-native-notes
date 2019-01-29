@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 
-
 /**
  * View 是一个支持 Flexbox 布局、样式、一些触摸处理、和一些无障碍功能的容器，并且它可以放到其它的视图里，也可以有任意多个任意类型的子视图。
  * 不论在什么平台上，View 都会直接对应一个平台的原生视图，无论它是 UIView、还是 android.view.View。
+ * View 的 flex 样式和 css flex 差不多，
  */
 export default class ViewTest extends Component {
   render() {
@@ -33,7 +33,10 @@ export default class ViewTest extends Component {
           </View>
         </View>
 
-
+        <View style={styles.testPosition}>
+          <View style={styles.zIndexA}></View>
+          <View style={styles.zIndexB}><Text>lyrhahaha</Text></View>
+        </View>
       </View>
     )
   }
@@ -61,6 +64,9 @@ const styles = StyleSheet.create({
     width: '80%',
     height: 250,
     flexDirection: 'row',
+    borderWidth: 5,
+    borderStyle: 'dotted', // android 不生效
+    borderColor: 'lightcoral'
   },
   flexLeft: {
     flex: 1,
@@ -105,5 +111,31 @@ const styles = StyleSheet.create({
   hiddenView: {
     display: 'none',
     backgroundColor: 'red',
+  },
+  testPosition: {
+    width: 250,
+    height: 250,
+    marginVertical: 20,
+    backgroundColor: 'lightskyblue',
+    // react native 只有 relative 和 position 两种布局, 默认是 relative
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  zIndexA: {
+    width: '50%',
+    height: '50%',
+    position: 'absolute',
+    opacity: 0.5,
+    left: 0,
+    zIndex: 4,
+    backgroundColor: 'green',
+  },
+  zIndexB: {
+    width: '50%',
+    height: '50%',
+    position: 'absolute',
+    zIndex: 3,
+    backgroundColor: 'blue',
   }
 })
