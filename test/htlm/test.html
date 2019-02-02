@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,10 +31,25 @@
         z-index: 2;
     }
 </style>
+
 <body>
     <div class="container">
-        <div class='a'></div>
-        <div class='b'></div>
+        <!-- <div class='a'></div>
+        <div class='b'></div> -->
+        <input id="test-input" type="text">
     </div>
+    <script>
+        window.onload = __ => {
+            const testInput = document.querySelector('#test-input');
+
+            testInput.onchange = event => {
+                console.log(`Input's value changed, new value is ${event.target.value}`);
+            }
+            testInput.oninput = event => {
+                console.log(`Input's value input, new value is ${event.target.value}`);
+            }
+        }
+    </script>
 </body>
+
 </html>

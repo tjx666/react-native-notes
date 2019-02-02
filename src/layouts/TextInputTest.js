@@ -24,7 +24,7 @@ export default class TextInputTest extends Component {
         <Text style={styles.basicTestValue}>{`输入的是: ${this.state.basicTestValue}`}</Text>
         <TextInput
           style={styles.basicTest}
-          onChangeText={this._handleBasicTestInputChangeText}
+          onChangeText={this._handleBasicTestInputChangeText} 
           allowFontScaling={false}
           autoCapitalize={'sentences'}
           autoCorrect={true}
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   basicTest: {
     height: 50,
-    marginVertical: 10,
+    // marginVertical: 10,
     borderWidth: 2,
     borderColor: 'blue',
   }

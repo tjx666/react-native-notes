@@ -4,6 +4,7 @@ import SimpleTest from './layouts/SimpleTest';
 import ViewTest from './layouts/ViewTest';
 import TextTest from './layouts/TextTest';
 import TextInputTest from './layouts/TextInputTest';
+import ScrollViewTest from './layouts/ScrollViewTest';
 
 const AppNavigator = createStackNavigator({
     Home: {
@@ -23,6 +24,9 @@ const AppNavigator = createStackNavigator({
     },
     TextInputTest: {
         screen: TextInputTest
+    },
+    ScrollViewTest: {
+        screen: ScrollViewTest
     }
 }, { initialRouteName: 'Home' });
 
