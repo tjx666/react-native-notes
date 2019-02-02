@@ -7,8 +7,9 @@ export default class Home extends Component {
         { content: 'Simple Test', page: 'SimpleTest' },
         { content: 'View', page: 'ViewTest' },
         { content: 'Text', page: 'TextTest' },
-        { content: 'TextInput', page: 'TextInputTest'},
-        { content: 'ScrollView', page: 'ScrollViewTest'},
+        { content: 'TextInput', page: 'TextInputTest' },
+        { content: 'ScrollView', page: 'ScrollViewTest' },
+        { content: 'FlatList', page: 'FlatListTest' },
     ]
 
     constructor(props) {

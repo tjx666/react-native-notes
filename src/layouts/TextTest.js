@@ -72,7 +72,6 @@ const styles = StyleSheet.create({
   },
   innerText: {
     color: 'aquamarine',
-    fontSize: 18,
   },
   horizontalTextInView: {
     flexDirection: 'row',

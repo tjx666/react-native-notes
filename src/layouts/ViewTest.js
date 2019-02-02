@@ -35,7 +35,7 @@ export default class ViewTest extends Component {
 
         <View style={styles.testPosition}>
           <View style={styles.zIndexA}></View>
-          <View style={styles.zIndexB}><Text>lyrhahaha</Text></View>
+          <View style={styles.zIndexB}><Text>I love you, but can't hurt you.</Text></View>
         </View>
       </View>
     )
