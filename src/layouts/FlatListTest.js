@@ -18,10 +18,20 @@ export default class FlatListTest extends Component {
                     ListEmptyComponent={<Text>列表为空</Text>}
                     ListHeaderComponent={<Text style={styles.listHeader}>a flatList of 100 names</Text>}
                     ListFooterComponent={<Text style={styles.listFooter}>end  ＞﹏＜</Text>}
+                    showsVerticalScrollIndicator={false}
+                    initialNumToRender={25}
+                    getItemLayout={this._getItemLayout}
+                    initialScrollIndex={5}
+                    onEndReached={__ => ToastAndroid.show('到底啦!', ToastAndroid.SHORT)}
+                    onEndReachedThreshold={0.1}
                 />
             </View>
         )
     }
+
+    _getItemLayout = (data, index) => (
+        { length: 41, offset: 41 * index, index }
+    )
 }
 
 const styles = StyleSheet.create({
@@ -32,7 +42,7 @@ const styles = StyleSheet.create({
     item: {
         padding: 10,
         fontSize: 18,
-        height: 44,
+        height: 40,
     },
     listHeader: {
         marginBottom: 10,

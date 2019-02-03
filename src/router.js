@@ -6,6 +6,7 @@ import TextTest from './layouts/TextTest';
 import TextInputTest from './layouts/TextInputTest';
 import ScrollViewTest from './layouts/ScrollViewTest';
 import FlatListTest from './layouts/FlatListTest';
+import SectionListTest from './layouts/SectionListTest';
 
 const AppNavigator = createStackNavigator({
     Home: {
@@ -31,6 +32,9 @@ const AppNavigator = createStackNavigator({
     },
     FlatListTest: {
         screen: FlatListTest
+    },
+    SectionListTest: {
+        screen: SectionListTest
     }
 }, { initialRouteName: 'Home' });
 
