@@ -128,7 +128,6 @@ export default class SectionListTest extends Component {
 
 const styles = StyleSheet.create({
   container: {
-
   },
   title: {
     marginTop: 5,

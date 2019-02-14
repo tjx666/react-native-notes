@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
-
 export default class Home extends Component {
     static contentList = [
         { content: 'Simple Test', page: 'SimpleTest' },
@@ -11,6 +10,8 @@ export default class Home extends Component {
         { content: 'ScrollView', page: 'ScrollViewTest' },
         { content: 'FlatList', page: 'FlatListTest' },
         { content: 'SectionList', page: 'SectionListTest' },
+        { content: 'ElementsButtonTest', page: 'ElementsButtonTest'},
+        { content: 'ElementsCardTest', page: 'ElementsCardTest'},
     ]
 
     constructor(props) {
@@ -38,7 +39,7 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
     home: {
         flex: 1,
-        backgroundColor: '#F9F7E8'
+        backgroundColor: 'white'
     },
     contentContainer: {
         flex: 1,

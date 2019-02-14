@@ -7,6 +7,8 @@ import TextInputTest from './layouts/TextInputTest';
 import ScrollViewTest from './layouts/ScrollViewTest';
 import FlatListTest from './layouts/FlatListTest';
 import SectionListTest from './layouts/SectionListTest';
+import ElementsButtonTest from './layouts/ElementsButtonTest';
+import ElementsCardTest from './layouts/ElementsCardTest';
 
 const AppNavigator = createStackNavigator({
     Home: {
@@ -35,7 +37,13 @@ const AppNavigator = createStackNavigator({
     },
     SectionListTest: {
         screen: SectionListTest
-    }
+    },
+    ElementsButtonTest: {
+        screen: ElementsButtonTest
+    },
+    ElementsCardTest: {
+        screen: ElementsCardTest
+    },
 }, { initialRouteName: 'Home' });
 
 export default createAppContainer(AppNavigator);

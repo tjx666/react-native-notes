@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-export default Divider = (props) => (
+export default DivideLine = (props) => (
     <View
         style={{
             borderBottomStyle: 'solid',

@@ -36,7 +36,6 @@ export default class FlatListTest extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         paddingTop: 5
     },
     item: {
