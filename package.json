@@ -10,6 +10,8 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.58.1",
+    "react-native-awesome-alert": "^0.4.0",
+    "react-native-dropdownalert": "^3.9.2",
     "react-native-elements": "^1.0.0",
     "react-native-vector-icons": "^6.3.0"
   },

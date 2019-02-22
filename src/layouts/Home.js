@@ -10,8 +10,9 @@ export default class Home extends Component {
         { content: 'ScrollView', page: 'ScrollViewTest' },
         { content: 'FlatList', page: 'FlatListTest' },
         { content: 'SectionList', page: 'SectionListTest' },
-        { content: 'ElementsButtonTest', page: 'ElementsButtonTest'},
-        { content: 'ElementsCardTest', page: 'ElementsCardTest'},
+        { content: 'ElementsButton', page: 'ElementsButtonTest'},
+        { content: 'AwesomeAlert', page: 'AwesomeAlertTest'},
+        { content: 'DropdownAlert', page: 'DropdownAlertTest'},
     ]
 
     constructor(props) {

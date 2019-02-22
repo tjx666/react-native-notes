@@ -8,7 +8,8 @@ import ScrollViewTest from './layouts/ScrollViewTest';
 import FlatListTest from './layouts/FlatListTest';
 import SectionListTest from './layouts/SectionListTest';
 import ElementsButtonTest from './layouts/ElementsButtonTest';
-import ElementsCardTest from './layouts/ElementsCardTest';
+import AwesomeAlertTest from './layouts/AwesomeAlertTest';
+import DropdownAlertTest from './layouts/DropdownAlertTest';
 
 const AppNavigator = createStackNavigator({
     Home: {
@@ -41,8 +42,11 @@ const AppNavigator = createStackNavigator({
     ElementsButtonTest: {
         screen: ElementsButtonTest
     },
-    ElementsCardTest: {
-        screen: ElementsCardTest
+    AwesomeAlertTest: {
+        screen: AwesomeAlertTest
+    },
+    DropdownAlertTest: {
+        screen: DropdownAlertTest
     },
 }, { initialRouteName: 'Home' });
 
